@@ -1,0 +1,179 @@
+{
+  "id": "d9278f5b-d972-48eb-b664-edba2a8c6909",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://next.privat24.ua",
+  "tests": [{
+    "id": "cd3b1d36-a60f-43d9-9f9a-2dfe610ab8a0",
+    "name": "Untitled",
+    "commands": [{
+      "id": "35490548-9758-4ec1-b49c-83bba9ed48bf",
+      "comment": "",
+      "command": "open",
+      "target": "/money-transfer/card",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0e7cd3c-a8f8-4dee-8055-dea17a305f6e",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node='numberdebitSource']",
+      "targets": [
+        ["css=.cMdHBZ", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div[2]/section/div/div/div[2]/div/form/div/div/div[2]/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4552331448138217"
+    }, {
+      "id": "bb54d1e6-76cc-45a6-a36d-93030bd38323",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"expiredebitSource\"]",
+      "targets": [],
+      "value": "0524"
+    }, {
+      "id": "6afc56fa-021f-438f-9014-1262b18c29a5",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"cvvdebitSource\"]",
+      "targets": [],
+      "value": "926"
+    }, {
+      "id": "5d0844fc-4d2d-453e-a664-0cfa9648875d",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"firstNamedebitSource\"]",
+      "targets": [],
+      "value": "First name"
+    }, {
+      "id": "275a5041-519b-4615-856e-98b984cb0cc9",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"lastNamedebitSource\"]",
+      "targets": [],
+      "value": "Last name"
+    }, {
+      "id": "22bde0d0-ed82-4a5d-841b-5ee935557300",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"numberreceiver\"]",
+      "targets": [],
+      "value": "4004159115449003"
+    }, {
+      "id": "3036eb0d-3e67-4f87-b845-4944e5b1ed4b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=[data-qa-node=\"firstNamereceiver\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "08bdebe9-f141-4ea1-a31d-affd1eeca7f9",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"firstNamereceiver\"]",
+      "targets": [],
+      "value": "Poluchatel"
+    }, {
+      "id": "00b7b8fb-67de-4ac6-a7db-bdedd0b8d871",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"lastNamereceiver\"]",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "acd30c21-325e-4ff7-b260-0709d0fbbbbe",
+      "comment": "",
+      "command": "type",
+      "target": "css=[data-qa-node=\"amount\"]",
+      "targets": [],
+      "value": "123"
+    }, {
+      "id": "b9d669c8-7582-49ba-b628-123b02d5f8d5",
+      "comment": "",
+      "command": "select",
+      "target": "css=[name=\"currency\"]",
+      "targets": [],
+      "value": "USD"
+    }, {
+      "id": "28d9cada-70a9-4c46-ae30-a8a8e43f700c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.hcHAAV", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div[2]/section/div/div/div[2]/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Переказати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d721553-e491-486c-9d70-3c2bd866d63f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node=\"payer-card\"]",
+      "targets": [],
+      "value": "4552 3314 4813 8217"
+    }, {
+      "id": "060fbeb3-94a9-4094-8dcd-4ee040b80ce6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='payer-currency']",
+      "targets": [],
+      "value": "5.41 USD"
+    }, {
+      "id": "18cb1e96-19d3-4711-bbac-2c380b0c4084",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='receiver-name']",
+      "targets": [],
+      "value": "POLUCHATEL TEST"
+    }, {
+      "id": "870fcb45-8051-4898-b74e-6eb427edba93",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='receiver-card']",
+      "targets": [],
+      "value": "4004 1591 1544 9003"
+    }, {
+      "id": "6b6e6a21-7312-400c-902e-cb8bcfcee12f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='receiver-amount']",
+      "targets": [],
+      "value": "123 USD"
+    }, {
+      "id": "bda2d39a-511a-4014-b53b-35f5605d1344",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='receiver-currency']",
+      "targets": [],
+      "value": "0 USD"
+    }, {
+      "id": "4f99e332-fabf-4d4f-8185-f93506235a3a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='payer-amount']",
+      "targets": [],
+      "value": "123 USD"
+    }, {
+      "id": "8a5b49d2-5233-4bb8-bd1b-01fa9ab0f2a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=[data-qa-node='total']",
+      "targets": [],
+      "value": "Разом до списання 128.41 USD"
+    }]
+  }],
+  "suites": [{
+    "id": "bf8530ca-ab39-4bce-8151-03925b73260b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd3b1d36-a60f-43d9-9f9a-2dfe610ab8a0"]
+  }],
+  "urls": ["https://next.privat24.ua/money-transfer/card", "https://next.privat24.ua/"],
+  "plugins": []
+}
